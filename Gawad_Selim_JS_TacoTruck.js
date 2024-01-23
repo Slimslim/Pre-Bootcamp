@@ -1,8 +1,4 @@
 
-
-var ArrayOfCoordinates = [[1,4], [-2,-4],[4,7],[12,2],[20,-3],[2,-15]]
-//TacoLocation = [x0,y0];
-
 function distance(point1, point2)
 {
     var a = Math.abs((point2[0]-point1[0]),2);
@@ -27,25 +23,12 @@ function avgDistance(pointCloud)
     return avgPosition;
 }
 
-var position1 = [2,-2];
-var position2 = [0,0];
-console.log(distance(position1, position2));
-console.log(avgDistance(ArrayOfCoordinates));
-
-var sum = 0;
-for(var i = 0; i < ArrayOfCoordinates.length; i++)
-{   
-    distance([14, -1], ArrayOfCoordinates[i]);
-    sum += distance;
-}
-
-
 var TestArray1 = [[1,4], [-2,-4],[4,7],[12,2],[20,-3],[2,-15]];
 var TestArray2 = [[2,2], [-2,-2]];
-var TestArray3 = [[1,4], [-2,-4],[4,7]];
+var TestArray3 = [[10,4], [-4,0],[4,7]];
+var TestArray4 = [[5,0], [3,4], [-3,4], [-5,0], [-3,-4], [3,-4]];
 
 console.log(avgDistance(TestArray1));
 console.log(avgDistance(TestArray2));
 console.log(avgDistance(TestArray3));
-
-// distance 1 = sqrt((x1-x0)^2+(y1-y0)^2)
+console.log(avgDistance(TestArray4));
