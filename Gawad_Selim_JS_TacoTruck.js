@@ -30,7 +30,7 @@ function avgDistance(pointCloud)
 var position1 = [2,-2];
 var position2 = [0,0];
 console.log(distance(position1, position2));
-console.log(avgDistance(ArrayOfCoordinates))
+console.log(avgDistance(ArrayOfCoordinates));
 
 var sum = 0;
 for(var i = 0; i < ArrayOfCoordinates.length; i++)
@@ -39,6 +39,13 @@ for(var i = 0; i < ArrayOfCoordinates.length; i++)
     sum += distance;
 }
 
-console.log(sum);
+
+var TestArray1 = [[1,4], [-2,-4],[4,7],[12,2],[20,-3],[2,-15]];
+var TestArray2 = [[2,2], [-2,-2]];
+var TestArray3 = [[1,4], [-2,-4],[4,7]];
+
+console.log(avgDistance(TestArray1));
+console.log(avgDistance(TestArray2));
+console.log(avgDistance(TestArray3));
 
 // distance 1 = sqrt((x1-x0)^2+(y1-y0)^2)
